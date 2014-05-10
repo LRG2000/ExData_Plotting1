@@ -18,7 +18,7 @@ plot2 <- function() {
       x <- unclass(as.POSIXct(dateTime))
       png(file = "plot2.png")
       plot(x, tab$Global_active_power, ylab="Global Active Power (kilowatts)", type = "l", 
-           xaxt = "n", cex = 1, cex.lab = .7, xlab = "")
+           xaxt = "n", xlab = "")
       axis(1, labels = c("Thu", "Fri", "Sat"), at = c(x[1],x[1]+3600*24,x[1]+3600*48), 
            cex.axis = .8, cex=1)      
       dev.off()
